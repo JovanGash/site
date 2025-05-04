@@ -1,0 +1,92 @@
+#h1 {
+#    display: none;
+#}
+
+/* ---------- SOLARIZED LIGHT ---------- */
+[data-md-color-scheme="default"] {
+    --md-default-bg-color: #fdf6e3;       /* Page background */
+    --md-default-fg-color: #586e75;       /* Sidebar text, top bar */
+    --md-typeset-color: #657b83;          /* Body text */
+    --md-code-bg-color: #eee8d5;          /* Code blocks */
+    --md-code-fg-color: #586e75;          /* Code text */
+    --md-accent-fg-color: #2aa198;        /* Accent (links, etc.) */
+    --md-primary-fg-color: #b58900;       /* Top bar text */
+    --md-primary-bg-color: #fdf6e3;       /* Top bar background */
+    --md-footer-bg-color: #eee8d5;
+    --md-footer-fg-color: #586e75;
+  
+    /* Sidebar */
+    --md-sidebar-bg-color: #eee8d5;
+    --md-sidebar-fg-color: #586e75;
+  }
+  
+  /* ---------- SOLARIZED DARK ---------- */
+  [data-md-color-scheme="slate"] {
+    --md-default-bg-color: #002b36;
+    --md-default-fg-color: #93a1a1;
+    --md-typeset-color: #839496;
+    --md-code-bg-color: #073642;
+    --md-code-fg-color: #93a1a1;
+    --md-accent-fg-color: #2aa198;
+    --md-primary-fg-color: #b58900;
+   /* --md-primary-bg-color: #002b36; */
+    --md-footer-bg-color: #073642;
+    --md-footer-fg-color: #839496;
+  
+    --md-sidebar-bg-color: #073642;
+    --md-sidebar-fg-color: #93a1a1;
+  }
+  
+  /* Optional: Header & Sidebar hover effects */
+  .md-nav__link:hover,
+  .md-header__title:hover {
+    color: #cf9f11;
+  }
+
+  /* Headings in cyan (Solarized color) */
+[data-md-color-scheme="default"] h1,
+[data-md-color-scheme="default"] h2,
+[data-md-color-scheme="default"] h3,
+[data-md-color-scheme="default"] h4,
+[data-md-color-scheme="default"] h5,
+[data-md-color-scheme="default"] h6 {
+  color: #2aa198;  /* Cyan */
+}
+
+[data-md-color-scheme="slate"] h1,
+[data-md-color-scheme="slate"] h2,
+[data-md-color-scheme="slate"] h3,
+[data-md-color-scheme="slate"] h4,
+[data-md-color-scheme="slate"] h5,
+[data-md-color-scheme="slate"] h6 {
+  color: #2aa198;  /* Cyan */
+}
+
+/* Muted header for Solarized Light */
+[data-md-color-scheme="default"] {
+    --md-primary-bg-color: #eee8d5;     /* Soft beige background */
+    --md-primary-fg-color: #2aa198;     /* Muted text/icons */
+  }
+  
+/* Muted header for Solarized Dark (darker version) */
+[data-md-color-scheme="slate"] {
+    --md-primary-bg-color:  #073642;   /* Very dark cyan-gray */
+    --md-primary-fg-color: #2aa198;   /* Muted light gray text/icons */
+  }
+
+  .md-header {
+    box-shadow: none; /* Remove drop shadow for flatter design */
+    border-bottom: 1px solid rgba(88, 110, 117, 0.3); /* Optional subtle border */
+  }
+
+  /* for default color scheme
+  --md-primary-bg-color: #eee8d5;     
+    --md-primary-fg-color: #586e75;     
+    */
+
+.round-img {
+    width: 200px;        /* or any size */
+    height: 200px;
+    border-radius: 50%;  /* makes it a circle */
+    object-fit: cover;   /* crops to fit the shape */
+}
